@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Person,Country } from './components/Person';
 
 function App() {
+  // const getAge = (name:string): number =>{
+  // } // This shows how to type cast in react typescript
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person
+      name="Martin"
+      email="martineelucky1996@gmail.com"
+      age={26}
+      isMarried={true}
+      friends={['Kelvin', 'Eric' , 'Kenneth' , 'Mary']}
+      country={Country.Canada}
+      />
+
     </div>
   );
 }
